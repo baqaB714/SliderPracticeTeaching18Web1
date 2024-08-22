@@ -89,7 +89,7 @@ body {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
+    width: 100%;
 }
 
 /* استایل لینک‌های داخل منوی کشویی در حالت هاور */
@@ -129,8 +129,6 @@ body {
         border: 1px solid #ccc;
         background-color: #f9f9f9;
         margin: 0 10px 5px 0;
-        position: relative;
-        top: 0;
     }
 
     /* استایل برای گزینه‌های منو */
@@ -138,9 +136,56 @@ body {
         background-color: #ffffff;
         color: #000;
         padding: 10px;
+        margin-top: 20px;
     }
 
     /* استایل برای گزینه‌های انتخاب شده */
     select:focus option:checked {
         background-color: #c0c0c0;
     }
+
+
+    /* site mape-------------- */
+    header h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* استایل سایت مپ */
+    .site-map ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .site-map li {
+        margin: 10px 0;
+    }
+
+    /* لینک های اصلی */
+    .site-map>ul>li>a {
+        font-size: 18px;
+        color: #007BFF;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .site-map>ul>li>a:hover {
+        text-decoration: underline;
+    }
+
+    /* لینک های زیر منو */
+    .site-map ul ul {
+        margin-left: 20px;
+    }
+
+    .site-map ul ul li a {
+        font-size: 16px;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .site-map ul ul li a:hover {
+        text-decoration: underline;
+    }
+
+
